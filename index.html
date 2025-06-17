@@ -4,36 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bacon Blood Bowl League</title>
-    <linK rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Blood Bowl 2 League</h1>
-        <header>
-            
-            <nav>
-                <ul>
-                    <li><a href="standings.html">Standings</a></li>
-                    <li><a href="matches.html">Matches</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="graveyard.html">Graveyard</a></li>
-                </ul>
-            </nav>
-        </header>
+        <h1>Bacon Blood Bowl League</h1>
+        <nav>
+            <ul>
+                <li><a href="standings.html">Standings</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="graveyard.html">Graveyard</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-         <section id="latest-matches">
-            <h2>Latest Matches</h2>
-            <p><a href="https://www.youtube.com/watch?v=PLoePKhEHG0&list=PLYdtlrYs1oSKONWUi4ml8mxIT0eKKIh4p" target="_blank">Watch here!</a></p>
-         </section>
+        <section id="hero" class="hero-section">
+            <h2>Welcome to Season 2!</h2>
+            <p class="hero-text">Join us this summer for an epic season of strategy, violence, and glory in the world's most brutal fantasy sports league!</p>
+            <div class="cta-buttons">
+                <a href="https://www.youtube.com/playlist?list=PLYdtlrYs1oSIsJgybTGa_pQOROkwb0OsA" target="_blank" class="cta-button secondary">Watch Matches</a>
+            </div>
+        </section>
 
-         <section id="upcoming-matches">
-            <h2>Upcoming Matches</h2>
-            <div id="schedule">Season 2 is right around the corner! We're starting up in May with new teams, new coaches and a bigger prize pool!</div>
-         </section>
+        <section id="upcoming-matches">
+            <h2><i class="fas fa-calendar"></i> Season 2 Schedule</h2>
+            <div id="schedule" class="schedule-container">
+                <div class="season-announcement">
+                    <h3>Season 2 is under way!</h3>
+                    <p>Keep up to date on bone-crushing action, tactical gameplay, and unforgettable moments!</p>
+                    <a href="matches.html" class="schedule-button">View Full Schedule</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="league-features">
+            <h2><i class="fas fa-star"></i> What's New in Season 2</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>New Teams</h3>
+                    <p>Fresh blood enters the arena with exciting new rosters!</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>New Coaches</h3>
+                    <p>Brand spanking new tacticians ready to lead their teams to glory or to the bottom of the dung heap!</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-coins"></i>
+                    <h3>Bigger Prize Pool</h3>
+                    <p>More at stake, more glory to be won!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="previous-seasons">
+            <h2><i class="fas fa-trophy"></i> Previous Seasons</h2>
+            <div class="match-grid">
+                <div class="match-card">
+                    <h3>Season 1</h3>
+                    <p>Watch our previous season highlights while Season 2 is ongoing!</p>
+                    <a href="https://www.youtube.com/watch?v=PLoePKhEHG0&list=PLYdtlrYs1oSKONWUi4ml8mxIT0eKKIh4p" target="_blank" class="watch-button">
+                        <i class="fas fa-play-circle"></i> Watch Highlights
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 Bacon Blood Bowl 2 League | <a href="https://youtu.be/A3cTDWc_zw4?si=ZKpr8F91getyt7dA">Q1 budget report</a> </p>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://youtu.be/A3cTDWc_zw4?si=ZKpr8F91getyt7dA">Q1 Budget Report</a>
+            </div>
+            <p>&copy; 2025 Bacon Blood Bowl 2 League</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
