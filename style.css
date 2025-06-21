@@ -260,3 +260,148 @@ tr:hover {
 tr:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* Schedule Page Styles */
+.schedule-section {
+    padding: 20px;
+}
+
+.schedule-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.schedule-section h2 i {
+    color: #ff4444;
+    margin-right: 10px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.week-card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid #3d3d3d;
+}
+
+.week-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.2);
+}
+
+.week-card.past-week {
+    opacity: 0.5;
+    background-color: #252525;
+    border-color: #333;
+}
+
+.week-card.past-week .match {
+    background-color: #333;
+}
+
+.week-card.past-week:hover {
+    opacity: 0.8;
+    transform: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.week-card:not(.past-week) {
+    background: linear-gradient(145deg, #2d2d2d, #383838);
+    border: 1px solid #ff4444;
+    box-shadow: 0 4px 15px rgba(255, 68, 68, 0.15);
+}
+
+.week-card:not(.past-week) h3 {
+    color: #ff6666;
+    text-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+}
+
+.week-card:not(.past-week) .match {
+    background: linear-gradient(145deg, #3d3d3d, #454545);
+    border-left: 3px solid #ff4444;
+}
+
+.week-card:not(.past-week) .match:hover {
+    background: linear-gradient(145deg, #454545, #505050);
+    transform: translateX(3px);
+}
+
+.week-card:not(.past-week) .week-dates {
+    color: #aaa;
+    border-bottom-color: #ff4444;
+}
+
+.week-card h3 {
+    color: #ff4444;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.week-dates {
+    color: #888;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3d3d3d;
+    padding-bottom: 8px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #3d3d3d;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.match:hover {
+    background-color: #4d4d4d;
+}
+
+.match:last-child {
+    margin-bottom: 0;
+}
+
+.match i {
+    color: #ff4444;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.match p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* Responsive adjustments for schedule */
+@media (max-width: 768px) {
+    .schedule-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 5px;
+    }
+
+    .week-card {
+        margin-bottom: 15px;
+    }
+
+    .match {
+        padding: 8px;
+    }
+
+    .match p {
+        font-size: 0.9em;
+    }
+}
