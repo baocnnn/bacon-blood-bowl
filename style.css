@@ -5,13 +5,16 @@ body {
     background-color: #1a1a1a;
     color: #fff;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 header {
     background-color: #2d2d2d;
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tagline {
@@ -31,16 +34,19 @@ h1 {
 nav {
     width: 100%;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 40px;
     font-size: 1.2em;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -72,13 +78,16 @@ section {
     width: 90%;
     max-width: 1200px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 .hero-section {
     text-align: center;
-    padding: 60px 30px;
+    padding: 40px 20px;
     background: linear-gradient(45deg, #2d2d2d, #3d3d3d);
     margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-text {
@@ -124,6 +133,8 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .match-card, .feature {
@@ -132,6 +143,8 @@ section {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .match-card:hover, .feature:hover {
@@ -163,13 +176,18 @@ section {
 
 .schedule-container {
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .season-announcement {
     background-color: #3d3d3d;
     padding: 30px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .schedule-button {
@@ -216,23 +234,75 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
     nav ul {
         flex-direction: column;
+        align-items: center;
         gap: 15px;
+        padding: 0 20px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
     }
 
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     section {
         padding: 20px;
-        width: 95%;
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+
+    .hero-section {
+        padding: 30px 15px;
+        margin: 0;
+        border-radius: 0;
     }
 
     .hero-text {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        padding: 0 10px;
+    }
+
+    .match-grid, .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .match-card, .feature {
+        padding: 20px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .season-announcement {
+        padding: 20px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    main {
+        padding: 20px 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
