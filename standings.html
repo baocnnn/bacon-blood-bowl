@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bacon Blood Bowl League - Standings</title>
@@ -23,8 +27,196 @@
 
     <main>
         <section>
-            <h2>Coming Soon</h2>
-            <p>add a table here</p>
+            <div class="container">
+        <div class="header">
+            <h1>Season 2 standings</h1>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="position">#</th>
+                        <th class="team-name">Team</th>
+                        <th class="record">Record (W-D-L)</th>
+                        <th class="points">Pts</th>
+                        <th class="form">Form (Last 5)</th>
+                        <th class="goals-for">GF</th>
+                        <th class="goals-against">GA</th>
+                        <th class="goal-diff">GD</th>
+                    </tr>
+                </thead>
+                <tbody id="standingsTable">
+                    <tr>
+                        <td class="position">1</td>
+                        <td class="team-name">Vallhalla-Halla Get Dolla</td>
+                        <td class="record">8-1-0</td>
+                        <td class="points">25</td>
+                        <td class="form"><span class="form-win">W</span><span class="form-win">W</span><span class="form-win">W</span><span class="form-win">W</span><span class="form-win">W</span></td>
+                        <td class="goals-for">16</td>
+                        <td class="goals-against">2</td>
+                        <td class="goal-diff positive">+14</td>
+                    </tr>
+                    <tr>
+                        <td class="position">2</td>
+                        <td class="team-name">Dead Memes Rise Again</td>
+                        <td class="record">5-3-1</td>
+                        <td class="points">18</td>
+                        <td class="form"><span class="form-win">W</span><span class="form-win">W</span><span class="form-win">W</span><span class="form-draw">D</span><span class="form-loss">L</span></td>
+                        <td class="goals-for">12</td>
+                        <td class="goals-against">5</td>
+                        <td class="goal-diff positive">+7</td>
+                    </tr>
+                    <tr>
+                        <td class="position">3</td>
+                        <td class="team-name">R3d Z0ne Ritualz</td>
+                        <td class="record">4-2-3</td>
+                        <td class="points">14</td>
+                        <td class="form"><span class="form-win">W</span><span class="form-win">W</span><span class="form-loss">L</span><span class="form-loss">L</span><span class="form-win">W</span></td>
+                        <td class="goals-for">7</td>
+                        <td class="goals-against">6</td>
+                        <td class="goal-diff positive">+1</td>
+                    </tr>
+                    <tr>
+                        <td class="position">4</td>
+                        <td class="team-name">/me</td>
+                        <td class="record">4-2-3</td>
+                        <td class="points">14</td>
+                        <td class="form"><span class="form-loss">L</span><span class="form-win">W</span><span class="form-win">W</span><span class="form-draw">D</span><span class="form-win">W</span></td>
+                        <td class="goals-for">7</td>
+                        <td class="goals-against">6</td>
+                        <td class="goal-diff positive">+1</td>
+                    </tr>
+                    <tr>
+                        <td class="position">5</td>
+                        <td class="team-name">Mining_Away</td>
+                        <td class="record">3-2-4</td>
+                        <td class="points">11</td>
+                        <td class="form"><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-loss">L</span></td>
+                        <td class="goals-for">9</td>
+                        <td class="goals-against">11</td>
+                        <td class="goal-diff negative">-2</td>
+                    </tr>
+                    <tr>
+                        <td class="position">6</td>
+                        <td class="team-name">Game_Of_Clones</td>
+                        <td class="record">2-2-5</td>
+                        <td class="points">8</td>
+                        <td class="form"><span class="form-loss">L</span><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-draw">D</span></td>
+                        <td class="goals-for">10</td>
+                        <td class="goals-against">14</td>
+                        <td class="goal-diff negative">-4</td>
+                    </tr>
+                  <tr>
+                        <td class="position">7</td>
+                        <td class="team-name">K-POOPy</td>
+                        <td class="record">1-3-5</td>
+                        <td class="points">6</td>
+                        <td class="form"><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-draw">D</span></td>
+                        <td class="goals-for">6</td>
+                        <td class="goals-against">13</td>
+                        <td class="goal-diff positive">-7</td>
+                    </tr>
+                    <tr>
+                        <td class="position">8</td>
+                        <td class="team-name">Cirque du Solayyy</td>
+                        <td class="record">0-1-8</td>
+                        <td class="points">1</td>
+                        <td class="form"><span class="form-loss">L</span><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-loss">L</span></td>
+                        <td class="goals-for">3</td>
+                        <td class="goals-against">13</td>
+                        <td class="goal-diff positive">-10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h2>Season 1 standings</h2>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="position">#</th>
+                        <th class="team-name">Team</th>
+                        <th class="record">Record (W-D-L)</th>
+                        <th class="points">Pts</th>
+                        <th class="form">Form (Last 5)</th>
+                        <th class="goals-for">GF</th>
+                        <th class="goals-against">GA</th>
+                        <th class="goal-diff">GD</th>
+                    </tr>
+                </thead>
+                <tbody id="standingsTable">
+                    <tr>
+                        <td class="position">1</td>
+                        <td class="team-name">CEOs of Business</td>
+                        <td class="record">6-3-1</td>
+                        <td class="points">21</td>
+                        <td class="form"><span class="form-win">W</span><span class="form-draw">D</span><span class="form-win">W</span><span class="form-win">W</span><span class="form-win">W</span></td>
+                        <td class="goals-for">12</td>
+                        <td class="goals-against">5</td>
+                        <td class="goal-diff positive">+7</td>
+                    </tr>
+                    <tr>
+                        <td class="position">2</td>
+                        <td class="team-name">Dallas Deep Delvers</td>
+                        <td class="record">6-3-1</td>
+                        <td class="points">21</td>
+                        <td class="form"><span class="form-win">W</span><span class="form-draw">D</span><span class="form-win">W</span><span class="form-loss">L</span><span class="form-win">W</span></td>
+                        <td class="goals-for">9</td>
+                        <td class="goals-against">4</td>
+                        <td class="goal-diff positive">+5</td>
+                    </tr>
+                    <tr>
+                        <td class="position">3</td>
+                        <td class="team-name">🥇Feelin' Froggy</td>
+                        <td class="record">4-3-3</td>
+                        <td class="points">15</td>
+                        <td class="form"><span class="form-draw">D</span><span class="form-win">W</span><span class="form-draw">D</span><span class="form-win">W</span><span class="form-loss">L</span></td>
+                        <td class="goals-for">28</td>
+                        <td class="goals-against">22</td>
+                        <td class="goal-diff positive">+6</td>
+                    </tr>
+                    <tr>
+                        <td class="position">4</td>
+                        <td class="team-name">LizardLotto</td>
+                        <td class="record">2-5-3</td>
+                        <td class="points">12</td>
+                        <td class="form"><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-draw">D</span><span class="form-win">W</span></td>
+                        <td class="goals-for">12</td>
+                        <td class="goals-against">13</td>
+                        <td class="goal-diff negative">-1</td>
+                    </tr>
+                    <tr>
+                        <td class="position">5</td>
+                        <td class="team-name">Shungite Shitters/Reborn</td>
+                        <td class="record">2-1-7</td>
+                        <td class="points">7</td>
+                        <td class="form"><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-win">W</span><span class="form-loss">L</span></td>
+                        <td class="goals-for">9</td>
+                        <td class="goals-against">15</td>
+                        <td class="goal-diff negative">-6</td>
+                    </tr>
+                    <tr>
+                        <td class="position">6</td>
+                        <td class="team-name">Desolation of Gnob</td>
+                        <td class="record">1-3-6</td>
+                        <td class="points">7</td>
+                        <td class="form"><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-loss">L</span><span class="form-draw">D</span><span class="form-loss">L</span></td>
+                        <td class="goals-for">6</td>
+                        <td class="goals-against">20</td>
+                        <td class="goal-diff negative">-14</td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
         </section>
     </main>
 
